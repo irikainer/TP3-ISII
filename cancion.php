@@ -2,20 +2,15 @@
 
 class Cancion
 {
-
-    public $opcion;
-
-    public  function __constructor($valor)
+    public function __constructor()
     {
-        $this->opcion = $valor;
     }
 
-    public function getCancion()
+    public function getCancion($opcion)
     {
-
-        if ($this->opcion == 0) {
+        if ($opcion == 0) {
             return "Cold as you - Disco: Taylor Swift (2006)";
-        } else if ($this->opcion == 1) {
+        } else if ($opcion == 1) {
             return "Getaway car - Disco: Reputation (2017)";
         } else {
             return "The last great american dynasty - Disco: Folklore (2020)";
