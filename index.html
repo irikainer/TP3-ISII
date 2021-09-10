@@ -17,7 +17,13 @@
             <option value="1" selected>Pop</option>
             <option value="2">Alternativo</option>
         </select>
+
+        <!-- Esta es la forma que encontré para que tome como válido el "checkbox" sin chequear -->
+        <input type="hidden" value="0"  name="single">
+        <input type="checkbox" value="1"  name="single">
+        <label for="single">Single</label>
         <input type="submit" value="Continuar">
+        
     </form>
 </body>
 
